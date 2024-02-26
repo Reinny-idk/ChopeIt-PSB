@@ -1,0 +1,45 @@
+/* SeatMap component styles */
+.seat-map {
+    position: relative;
+}
+
+.seat {
+    width: 20px; /* Decreased width of the seat */
+    height: 20px; /* Decreased height of the seat */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    position: absolute; /* Add position relative for absolute positioning */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    z-index: 1;
+    background-color: transparent;
+
+    /* Make the seat slightly round at the sides */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    font-size: 10px;
+    color: #000000
+}
+
+.seat.available {
+    background-color: #00ff00; /* Lime for available seats */
+}
+
+.seat.unavailable {
+    background-color: #ff0000; /* Red for unavailable seats */
+}
+
+.seat.selected {
+    background-color: #4169ff; /* Royal blue for selected seats */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
